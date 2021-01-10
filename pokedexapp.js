@@ -13,16 +13,7 @@ $("document").ready(function () {
     })
   })
   
-  const speakInfo = (name = "", species = "Unknown Species", biology = "") => {
-    const textToSpeech = name
-      .concat(". ")
-      .concat(species)
-      .concat(". ")
-      .concat(biology)
   
-    responsiveVoice.cancel(); // Cancel any speech in process
-    responsiveVoice.speak(textToSpeech);
-  }
   
   const displayInfo = (pokemon) => {
     const speciesField = $("#species .desc");
@@ -146,15 +137,7 @@ $("document").ready(function () {
       getDropDownOption(pokemon.name, id + 1)
     );
   
-    searchInput.autocomplete({
-      autoFocus: true,
-      source: list,
-      minLength: 2,
-      select: (e, ui) => {
-        searchInput.val(ui.item.value);
-        searchInput.trigger({ type: 'keypress', keyCode: 13 });
-      }
-    });
+    
   }
   
   const getDropDownOption = (name, id) => {
