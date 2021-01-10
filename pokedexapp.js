@@ -1,3 +1,5 @@
+/*pokedex tutorial*/
+
 $("document").ready(function () {
     const searchInput = $("#search");
   
