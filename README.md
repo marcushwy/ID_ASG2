@@ -3,7 +3,7 @@ Interactive Development Module Ngee Ann Polytechnic Assignment 2 (Marcus Hon Wei
 Student ID : S10207469
 Name: Marcus Hon Wei Yang  
 
-**Pitch in network folder**
+**Pitch link here https://drive.google.com/file/d/12effDMi8DBmVbraO1ZUSx5VeD1zeThy4/view?usp=sharing**
 
 
 ShinyDex Web Application
