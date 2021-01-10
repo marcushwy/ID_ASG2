@@ -3,6 +3,8 @@ Interactive Development Module Ngee Ann Polytechnic Assignment 2 (Marcus Hon Wei
 Student ID : S10207469
 Name: Marcus Hon Wei Yang  
 
+**Pitch in network folder**
+
 
 ShinyDex Web Application
 Welcome to my Readme ! For this assignment i have created a website using html, css, javascript and PokeApi to create a functional website that allows you to look at a gallery of pokemon in cards as well as a pokedex (pokemon search device) which allows you to look for your desired pokemon by entering the correct name or number. 
