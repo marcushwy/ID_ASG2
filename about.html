@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Shiny Dex </title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">  
+</head>
+
+<body>
+    
+    
+    <nav>
+        <div class= "logo">
+            <h1>SHINYDEX</h1>
+        </div>
+        <ul class = "nav-links">
+            <li>
+                <a href="index.html">HOME</a>
+            </li>
+            <li>
+                <a href="gallery.html">GALLERY</a>
+            </li>
+            <li>
+                <a href="about.html">ABOUT</a>
+            </li>
+            <li>
+                <a href="pokedex.html">POKEDEX</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class="vid-back">
+    <video autoplay muted loop id="myVideo">
+        <source src="lilielive.mp4" type="video/mp4">
+    </video>
+    </div>
+
+    <div class="about-content">
+        <p>
+            Created and Designed by Marcus Hon 2021.<br>
+            <a href="hwymarcus@gmail.com">hwymarcus@gmail.com</a><br>
+            Instagram: mwyang_318<br>
+            Tel: 8220-5155
+        </p>
+    </div>
+
+    
+      
+    <div class="form">
+        <form action="/action_page.php">
+          <label for="fname">Full Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Enter your name right here trainer!">
+      
+          <label for="lname">Email</label>
+          <input type="text" id="lname" name="lastname" placeholder="e.g: ashketchum@pokemonmail.com ">
+
+          <label for="country">Favourite Region</label>
+          <select id="country" name="country">
+            <option value="kanto">Kanto</option>
+            <option value="johto">Johto</option>
+            <option value="hoenn">Hoenn</option>
+            <option value="sinnoh">Sinnoh</option>
+            <option value="unova">Unova</option>
+            <option value="kalos">Kalos</option>
+            <option value="galar">Galar</option>
+          </select>
+      
+          <label for="feedback">Anything Else?</label>
+          <textarea id="feedback" name="feedback" placeholder="Feel free to drop feedback and suggestions for the page so that we can improve :)" style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+    
+    
+    
+</body>
+</html>

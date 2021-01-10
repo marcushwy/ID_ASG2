@@ -1,0 +1,343 @@
+body { 
+    
+    
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Poiret One';
+}
+
+/*Styling the Pokemon cards in gallery*/
+.card {
+    list-style: none;
+    padding:40px;
+    background-color: radial-gradient(ellipse farthest-corner at 45px 45px, rgba(50, 50, 50, 0.8) 0%, rgba(80, 80, 80, 0.2) );
+    opacity: 3;
+    color: black;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.card-desc{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 28px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.card-image{
+    height: 180px;
+}
+
+.card:hover{
+    animation: bounce 0.5s linear; 
+}
+
+/*Animations for the cards*/
+@keyframes bounce{
+    20%{
+        transform: translateY(-6px);
+    }
+
+    40%{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(-2px);
+    }
+    80%{
+        transform: translateY(-0px);
+    }
+}
+
+
+#pokedex {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+
+}
+
+.container_gallery { 
+    padding: 40px;
+    margin: 0 auto;
+}
+
+/*Stylimg the navigation bar*/ 
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color:transparent;
+    opacity: 2;
+}
+
+.logo{
+    color:whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 25px; 
+    
+}
+
+.logo:hover{
+    -webkit-mask-image: linear-gradient(-75deg, #d4d0d099 30%, rgb(212, 208, 208) 50%, rgba(255, 255, 255, 0.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 1.3s infinite;
+    text-shadow: 1px 1px 2px black, 0 0 25px purple, 0 0 5px darkblue;
+  }
+  
+  @-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    
+    to {
+      -webkit-mask-position: -50%;
+    }
+  }
+
+.nav-links{ 
+    display: flex;
+    justify-content: space-around;
+    width:40%;
+}
+
+.nav-links a { 
+    color:black;
+    text-decoration: none; 
+    letter-spacing: 3px;
+    font-size: 18px; 
+    font-weight: bold; 
+    font-weight: 900;
+    text-shadow: 1px 1px 2px black, 0 0 25px;
+}
+
+.nav-links:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	
+}
+
+
+
+.nav-links li{ 
+    list-style: none; 
+    color: black;   
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{ 
+    width: 25px; 
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden; 
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh; 
+        top: 8vh;
+        background-color: #9C9FCF;
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%); 
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li{
+        opacity: 1;
+    }
+
+    .burger{
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1; 
+        transform: translateX(0px);
+    }
+}
+
+
+/*Styling the Video to be the background*/ 
+.vid-back{
+    position: fixed;
+    max-width: 100%;
+    left: -10%;
+    top:0%;
+    z-index: -1;
+}
+
+/*CSS for pokedex layout*/
+
+.gallery-heading {
+font-size: 25px;
+background-color: #00b8e6;
+color: whitesmoke;
+padding: 10px;
+align-items: center;
+text-align: center;
+font-weight: bolder;
+opacity: .8;
+border-top-left-radius: -30% 10%;
+border-top-right-radius: -30 10%;
+border-bottom-left-radius: 50% 20%;
+border-bottom-right-radius: 50% 20%;
+text-shadow: 1px 1px 2px black, 0 0 25px purple, 0 0 5px darkblue;
+box-shadow: lightsteelblue;
+}
+
+.footer{
+    display: flexbox;
+    color: black;
+    font-family: 'Poiret One';
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00b8e6;
+    color: white;
+    text-align: center;
+    opacity: .8;
+    font-weight: bold;
+    border-top-left-radius: 50% 20%;
+    border-top-right-radius: 50% 20%;
+    text-shadow: 1px 1px 2px black, 0 0 25px purple, 0 0 5px darkblue;
+    box-shadow: lightsteelblue;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Poiret One';
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black, 0 0 25px purple, 0 0 5px darkblue;
+    
+  }
+  
+  input[type=submit] {
+    background-color:blue;
+    color: whitesmoke;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Poiret One';
+  }
+  
+  input[type=submit]:hover {
+    background-color: lightsteelblue;
+  }
+  
+  .form {
+    border-radius: 5px;
+    background-color: lightskyblue;
+    padding: 20px;
+    color: white;
+    font-size:18px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black, 0 0 25px purple, 0 0 5px darkblue; 
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 20%;
+  }
+
+  .about-content {
+      background-color:#00b8e6 ;
+      opacity: .8; 
+      text-align: center;
+      color: whitesmoke;
+      letter-spacing: 20%;
+      font-size: 19px;
+      font-weight: bolder;
+  }
+
+  .home-content{ 
+    color: whitesmoke;
+    font-family: 'Poiret One';
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 25px purple, 0 0 5px darkblue;
+    align-content: center;
+    top: 50;
+    margin: 270px;
+  }
+
+  .about-content{
+    text-shadow: 1px 1px 2px black, 0 0 25px purple, 0 0 5px darkblue;
+  }

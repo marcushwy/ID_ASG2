@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Shiny Dex </title>
+        <link rel = "stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">  
+    </head>
+
+    <body>
+        <!--Navigation Bar-->
+        <nav>
+            <div class= "logo">
+                <h1>SHINYDEX</h1>
+            </div>
+            <ul class = "nav-links">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="gallery.html">GALLERY</a>
+                </li>
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+                <li>
+                    <a href="pokedex.html">POKEDEX</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+        <!--Background video-->
+        <div class ="vid-back">
+        <video autoplay muted loop id="myVideo">
+            <source src="lilielive.mp4" type="video/mp4">
+        </video>
+        </div>
+
+        <!--Header-->
+        <div class ="gallery-heading">
+            <p>Don't we just love Shinies? Check Out All of the Pokemon in their Shiny Sprite Variants here!</p>
+        </div>
+
+        <!--Display the list of all Pokemon-->
+        <div class = "container_gallery">
+            <ol id = "pokedex"></ol>
+        </div>
+        <script src="script.js"></script>
+
+        <!--Display the footer-->
+        <div class ="footer">
+            <p>
+               Marcus Hon Wei Yang 2021 <br>
+            </p>
+        </div>
+
+    </body>
+</html>
